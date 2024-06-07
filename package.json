@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "node_modules/.bin/next dev",
+    "build": "node_modules/.bin/next build",
+    "start": "node_modules/.bin/next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "workbox-core": "^7.1.0",
+    "workbox-precaching": "^7.1.0",
+    "workbox-routing": "^7.1.0",
+    "workbox-strategies": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "^18.3.3",
+    "typescript": "4.5.4"
+  }
+}
