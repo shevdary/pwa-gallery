@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
+import Banner from "../components/Banner";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -54,7 +55,10 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#317EFB"/>
         </Head>
         <body>
+        <div>
+          <Banner/>
           <Main/>
+        </div>
           <NextScript />
         </body>
       </Html>
