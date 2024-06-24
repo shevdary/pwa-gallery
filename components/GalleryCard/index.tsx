@@ -18,8 +18,9 @@ export const Elevation = () => {
 
   if (isLoading){
     return <Grid >{
-      Array.from(new Array(12)).map(() => (
+      Array.from(new Array(12)).map((_, idx) => (
         <Skeleton
+          key={idx}
           sx={{ bgcolor: 'grey.900' }}
           variant="rectangular"
           width={210}
@@ -33,7 +34,7 @@ export const Elevation = () => {
   return (
     <ImageList variant="masonry" cols={3} gap={8}>
       {data.map((item: {urls: { full: string, small: string }, alt_description: string}) => (
-        <CardElement data={item.urls} description={item.alt_description}/>
+        <CardElement data={item.urls} description={item.alt_description} key={item.urls.full}/>
       ))}
     </ImageList>
   );
